@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Hy Dang | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-900">An Hy Dang</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-600">Om meg</a>
+        <a href="#projects" class="hover:text-blue-600">Prosjekter</a>
+        <a href="#contact" class="hover:text-blue-600">Kontakt</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Intro -->
+  <section class="text-center py-20 bg-gradient-to-b from-blue-50 to-gray-50">
+    <h2 class="text-4xl font-extrabold mb-4">Hei! Jeg er An Hy Dang</h2>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Engasjert og nysgjerrig ingeniør med en bachelor i cyberfysisk nettverksteknologi. 
+      Jeg brenner for cybersikkerhet, nettverk og teknologi som kan skape trygge digitale løsninger.
+    </p>
+  </section>
+
+  <!-- Om meg -->
+  <section id="about" class="max-w-4xl mx-auto py-16 px-6">
+    <h3 class="text-2xl font-bold mb-4">Om meg</h3>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      Jeg har en bachelor i cyberfysisk nettverksteknologi fra Høgskulen på Vestlandet. 
+      Gjennom studiet har jeg fått solid erfaring med nettverksinfrastruktur, sikkerhetsprotokoller, kryptering 
+      og praktiske laboratorieoppgaver med Cisco-utstyr. Jeg har også programmert i blant annet Python, C# og SQL, 
+      og hatt fag innen kommunikasjonsteknologier og cybersikkerhet. 
+    </p>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      Jeg beskriver meg selv som en engasjert og nysgjerrig person som liker å utforske nye verktøy, 
+      lære gjennom praktiske prosjekter og finne smarte løsninger på komplekse utfordringer. 
+      Med erfaring fra både studier, deltidsjobber og egne prosjekter har jeg lært å jobbe strukturert, 
+      levere under press og samtidig være kreativ i tilnærmingen min.
+    </p>
+    <h4 class="text-xl font-semibold mb-2">Noen av ferdighetene mine:</h4>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+      <li>Nettverksteknologi og sikkerhet (OSI-modellen, VLAN, kryptering, brannmurer)</li>
+      <li>Programmering (Python, C#, SQL, KQL)</li>
+      <li>Skyplattformer og Microsoft Azure</li>
+      <li>SIEM og sikkerhetsanalyse (Microsoft Sentinel)</li>
+      <li>Problemløsning, samarbeid og kommunikasjon</li>
+    </ul>
+  </section>
+
+  <!-- Prosjekter -->
+  <section id="projects" class="bg-white py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold mb-8">Prosjekter</h3>
+      <div class="grid gap-8 sm:grid-cols-2">
+        
+        <!-- Honeypot-VM -->
+        <div class="bg-gray-50 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">Honeypot-VM</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
+            <li>Opprettet en virtuell honeypot-maskin for å overvåke uautoriserte innloggingsforsøk</li>
+            <li>Loggførte forsøk med IP-adresse, tidspunkt og brukernavn</li>
+            <li>Visualiserte data på kart ved hjelp av IP-lookup</li>
+          </ul>
+        </div>
+
+        <!-- SIEM med Microsoft Sentinel -->
+        <div class="bg-gray-50 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">SIEM med Microsoft Sentinel</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
+            <li>Implementerte et SIEM-system koblet til honeypot</li>
+            <li>Konfigurerte regler for å analysere innkommende logger</li>
+            <li>Fikk praktisk erfaring med sikkerhetsanalyse og hendelsesrespons</li>
+          </ul>
+        </div>
+
+        <!-- Hjemmelab -->
+        <div class="bg-gray-50 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">Hjemmelab i Packet Tracer</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
+            <li>Designet et hjemmenettverk med private, gjeste- og DMZ-soner</li>
+            <li>Konfigurerte rutere og svitsjer med VLAN</li>
+            <li>Implementerte syslog-server for overvåkning</li>
+          </ul>
+        </div>
+
+        <!-- PwC Cybersecurity Simulator -->
+        <div class="bg-gray-50 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">PwC Cybersecurity Job Simulator</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
+            <li>Gjennomførte en simulering innen cybersikkerhet</li>
+            <li>Utførte risikovurdering og utarbeidet sikkerhetsanbefalinger</li>
+            <li>Lærte å anvende integrerte forsvarsstrategier i realistiske scenarioer</li>
+          </ul>
+        </div>
+
+        <!-- TryHackMe & SpiderFoot -->
+        <div class="bg-gray-50 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">TryHackMe & OSINT med SpiderFoot</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
+            <li>Løst praktiske CTF-oppgaver og lært om nettverksangrep i TryHackMe</li>
+            <li>Satt opp og brukt SpiderFoot for OSINT-analyse</li>
+            <li>Analysert skanningsresultater for å forstå sårbarheter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Kontakt</h3>
+    <p class="text-gray-700 mb-4">Jeg er alltid åpen for en prat om teknologi, prosjekter eller muligheter.</p>
+    <p>
+      <a href="mailto:Anhydang@outlook.com" class="text-blue-600 hover:underline">Anhydang@outlook.com</a> · 
+      <a href="https://www.linkedin.com/in/" class="text-blue-600 hover:underline">LinkedIn</a> · 
+      <a href="https://github.com/" class="text-blue-600 hover:underline">GitHub</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+    © 2025 An Hy Dang. Bygget med HTML & TailwindCSS.
+  </footer>
+</body>
+</html>
