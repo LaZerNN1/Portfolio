@@ -14,22 +14,22 @@
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-green-400 font-mono">
+<body class="bg-gradient-to-br from-indigo-50 via-blue-50 to-indigo-100 text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="bg-black/90 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-green-600">
+  <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
     <div class="max-w-5xl mx-auto p-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-400">An Hy Dang</h1>
+      <h1 class="text-2xl font-bold text-indigo-600">An Hy Dang</h1>
       <nav class="space-x-6 font-medium">
-        <a href="#about" class="hover:text-green-500 transition">Om meg</a>
-        <a href="#projects" class="hover:text-green-500 transition">Prosjekter</a>
-        <a href="#contact" class="hover:text-green-500 transition">Kontakt</a>
+        <a href="#about" class="hover:text-indigo-600 transition">Om meg</a>
+        <a href="#projects" class="hover:text-indigo-600 transition">Prosjekter</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Kontakt</a>
       </nav>
     </div>
   </header>
 
   <!-- Intro -->
-  <section class="text-center py-24 bg-gradient-to-b from-black via-gray-900 to-black text-green-400">
+  <section class="text-center py-24 bg-gradient-to-b from-indigo-600 to-blue-500 text-white">
     <h2 class="text-5xl font-extrabold mb-6">Hei! Jeg er An Hy Dang</h2>
     <p class="text-lg max-w-2xl mx-auto leading-relaxed">
       Engasjert og nysgjerrig ingeniør med en bachelor i cyberfysisk nettverksteknologi. 
@@ -39,21 +39,21 @@
 
   <!-- Om meg -->
   <section id="about" class="max-w-5xl mx-auto py-20 px-6">
-    <h3 class="text-3xl font-bold mb-6 text-green-400">Om meg</h3>
-    <p class="text-green-300 leading-relaxed mb-6">
+    <h3 class="text-3xl font-bold mb-6 text-indigo-700">Om meg</h3>
+    <p class="text-gray-700 leading-relaxed mb-6">
       Jeg har en bachelor i cyberfysisk nettverksteknologi fra Høgskulen på Vestlandet. 
       Gjennom studiet har jeg fått solid erfaring med nettverksinfrastruktur, sikkerhetsprotokoller, kryptering 
       og praktiske laboratorieoppgaver med Cisco-utstyr. Jeg har også programmert i blant annet Python, C# og SQL, 
       og hatt fag innen kommunikasjonsteknologier og cybersikkerhet. 
     </p>
-    <p class="text-green-300 leading-relaxed mb-6">
+    <p class="text-gray-700 leading-relaxed mb-6">
       Jeg beskriver meg selv som en engasjert og nysgjerrig person som liker å utforske nye verktøy, 
       lære gjennom praktiske prosjekter og finne smarte løsninger på komplekse utfordringer. 
       Med erfaring fra både studier, deltidsjobber og egne prosjekter har jeg lært å jobbe strukturert, 
       levere under press og samtidig være kreativ i tilnærmingen min.
     </p>
-    <h4 class="text-xl font-semibold mb-3 text-green-400">Noen av ferdighetene mine:</h4>
-    <ul class="list-disc pl-6 space-y-2 text-green-300">
+    <h4 class="text-xl font-semibold mb-3 text-indigo-600">Noen av ferdighetene mine:</h4>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700">
       <li>Nettverksteknologi og sikkerhet (OSI-modellen, VLAN, kryptering, brannmurer)</li>
       <li>Programmering (Python, C#, SQL, KQL)</li>
       <li>Skyplattformer og Microsoft Azure</li>
@@ -63,50 +63,51 @@
   </section>
 
   <!-- Prosjekter -->
-  <section id="projects" class="bg-gray-900 py-20 px-6">
+  <section id="projects" class="bg-white py-20 px-6">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-bold mb-10 text-green-400">Prosjekter</h3>
+      <h3 class="text-3xl font-bold mb-10 text-indigo-700">Prosjekter</h3>
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         
-        <div class="bg-black/70 border border-green-600 rounded-2xl shadow-lg p-6 hover:shadow-green-500 transition">
-          <h4 class="text-xl font-semibold mb-3 text-green-400">Honeypot-VM</h4>
-          <ul class="list-disc pl-5 text-green-300 space-y-1">
+        <!-- Kort -->
+        <div class="bg-indigo-50 rounded-2xl shadow hover:shadow-lg transition p-6">
+          <h4 class="text-xl font-semibold mb-3 text-indigo-600">Honeypot-VM</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
             <li>Opprettet en virtuell honeypot-maskin for å overvåke uautoriserte innloggingsforsøk</li>
             <li>Loggførte forsøk med IP-adresse, tidspunkt og brukernavn</li>
             <li>Visualiserte data på kart ved hjelp av IP-lookup</li>
           </ul>
         </div>
 
-        <div class="bg-black/70 border border-green-600 rounded-2xl shadow-lg p-6 hover:shadow-green-500 transition">
-          <h4 class="text-xl font-semibold mb-3 text-green-400">SIEM med Microsoft Sentinel</h4>
-          <ul class="list-disc pl-5 text-green-300 space-y-1">
+        <div class="bg-indigo-50 rounded-2xl shadow hover:shadow-lg transition p-6">
+          <h4 class="text-xl font-semibold mb-3 text-indigo-600">SIEM med Microsoft Sentinel</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
             <li>Implementerte et SIEM-system koblet til honeypot</li>
             <li>Konfigurerte regler for å analysere innkommende logger</li>
             <li>Fikk praktisk erfaring med sikkerhetsanalyse og hendelsesrespons</li>
           </ul>
         </div>
 
-        <div class="bg-black/70 border border-green-600 rounded-2xl shadow-lg p-6 hover:shadow-green-500 transition">
-          <h4 class="text-xl font-semibold mb-3 text-green-400">Hjemmelab i Packet Tracer</h4>
-          <ul class="list-disc pl-5 text-green-300 space-y-1">
+        <div class="bg-indigo-50 rounded-2xl shadow hover:shadow-lg transition p-6">
+          <h4 class="text-xl font-semibold mb-3 text-indigo-600">Hjemmelab i Packet Tracer</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
             <li>Designet et hjemmenettverk med private, gjeste- og DMZ-soner</li>
             <li>Konfigurerte rutere og svitsjer med VLAN</li>
             <li>Implementerte syslog-server for overvåkning</li>
           </ul>
         </div>
 
-        <div class="bg-black/70 border border-green-600 rounded-2xl shadow-lg p-6 hover:shadow-green-500 transition">
-          <h4 class="text-xl font-semibold mb-3 text-green-400">PwC Cybersecurity Job Simulator</h4>
-          <ul class="list-disc pl-5 text-green-300 space-y-1">
+        <div class="bg-indigo-50 rounded-2xl shadow hover:shadow-lg transition p-6">
+          <h4 class="text-xl font-semibold mb-3 text-indigo-600">PwC Cybersecurity Job Simulator</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
             <li>Gjennomførte en simulering innen cybersikkerhet</li>
             <li>Utførte risikovurdering og utarbeidet sikkerhetsanbefalinger</li>
             <li>Lærte å anvende integrerte forsvarsstrategier i realistiske scenarioer</li>
           </ul>
         </div>
 
-        <div class="bg-black/70 border border-green-600 rounded-2xl shadow-lg p-6 hover:shadow-green-500 transition">
-          <h4 class="text-xl font-semibold mb-3 text-green-400">TryHackMe & OSINT med SpiderFoot</h4>
-          <ul class="list-disc pl-5 text-green-300 space-y-1">
+        <div class="bg-indigo-50 rounded-2xl shadow hover:shadow-lg transition p-6">
+          <h4 class="text-xl font-semibold mb-3 text-indigo-600">TryHackMe & OSINT med SpiderFoot</h4>
+          <ul class="list-disc pl-5 text-gray-700 space-y-1">
             <li>Løst praktiske CTF-oppgaver og lært om nettverksangrep i TryHackMe</li>
             <li>Satt opp og brukt SpiderFoot for OSINT-analyse</li>
             <li>Analysert skanningsresultater for å forstå sårbarheter</li>
@@ -119,17 +120,17 @@
 
   <!-- Kontakt -->
   <section id="contact" class="max-w-5xl mx-auto py-20 px-6 text-center">
-    <h3 class="text-3xl font-bold mb-6 text-green-400">Kontakt</h3>
-    <p class="text-green-300 mb-6">Jeg er alltid åpen for en prat om teknologi, prosjekter eller muligheter.</p>
+    <h3 class="text-3xl font-bold mb-6 text-indigo-700">Kontakt</h3>
+    <p class="text-gray-700 mb-6">Jeg er alltid åpen for en prat om teknologi, prosjekter eller muligheter.</p>
     <p class="space-x-4">
-      <a href="mailto:Anhydang@outlook.com" class="text-green-400 hover:underline font-medium">Anhydang@outlook.com</a>
-      <a href="https://www.linkedin.com/in/" class="text-green-400 hover:underline font-medium">LinkedIn</a>
-      <a href="https://github.com/" class="text-green-400 hover:underline font-medium">GitHub</a>
+      <a href="mailto:Anhydang@outlook.com" class="text-indigo-600 hover:underline font-medium">Anhydang@outlook.com</a>
+      <a href="https://www.linkedin.com/in/" class="text-indigo-600 hover:underline font-medium">LinkedIn</a>
+      <a href="https://github.com/" class="text-indigo-600 hover:underline font-medium">GitHub</a>
     </p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black border-t border-green-600 text-green-400 py-6 text-center text-sm">
+  <footer class="bg-indigo-600 text-white py-6 text-center text-sm">
     © 2025 An Hy Dang · Bygget med HTML & TailwindCSS
   </footer>
 
