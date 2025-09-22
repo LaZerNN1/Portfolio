@@ -1,59 +1,14 @@
-# An Hy Dang
+# 🌐 Portfolio – An Hy Dang
 
-Engasjert og nysgjerrig ingeniør med en bachelor i cyberfysisk nettverksteknologi. Jeg brenner for cybersikkerhet, nettverk og teknologi som kan skape trygge digitale løsninger.
+Dette er min personlige portfolioside for å presentere meg selv, mine ferdigheter og prosjekter innen nettverksteknologi og cybersikkerhet.
 
-## 🧑‍💻Om meg
+🔗 **Live-side:** [Portfolio på GitHub Pages](https://lazernn1.github.io/Portfolio/#contact)
 
-Jeg har en bachelor i cyberfysisk nettverksteknologi fra Høgskulen på Vestlandet. Gjennom studiet har jeg fått solid erfaring med nettverksinfrastruktur, sikkerhetsprotokoller, kryptering og praktiske laboratorieoppgaver med Cisco-utstyr. Jeg har også programmert i blant annet Python, C# og SQL, og hatt fag innen kommunikasjonsteknologier og cybersikkerhet.
+## 📖 Innhold
+- **[Om meg](https://github.com/LaZerNN1)** – kort introduksjon om min bakgrunn og ferdigheter  
+- **Prosjekter** – oversikt over egne prosjekter innen cybersikkerhet, nettverk og utvikling  
+- **Kontakt** – hvordan du kan nå meg  
 
-Jeg beskriver meg selv som en engasjert og nysgjerrig person som liker å utforske nye verktøy, lære gjennom praktiske prosjekter og finne smarte løsninger på komplekse utfordringer. Med erfaring fra både studier, deltidsjobber og egne prosjekter har jeg lært å jobbe strukturert, levere under press og samtidig være kreativ i tilnærmingen min.
-
-### 💡Noen av ferdighetene mine:
-
-- Nettverksteknologi og sikkerhet (OSI-modellen, kryptering, konfigurering)
-- Programmering (Python, C#, SQL)
-- Microsoft Azure
-- SIEM og sikkerhetsanalyse (Microsoft Sentinel)
-- Problemløsning, samarbeid og kommunikasjon
-
-## 🚀Prosjekter
-
-### 🕷️Honeypot-VM
-
-- Opprettet en virtuell honeypot-maskin for å overvåke uautoriserte innloggingsforsøk
-- Loggførte forsøk med IP-adresse, tidspunkt og brukernavn
-- Visualiserte data på kart ved hjelp av IP-lookup
-
-### 🛡️SIEM med Microsoft Sentinel
-
-- Implementerte et SIEM-system koblet til honeypot
-- Konfigurerte regler for å analysere innkommende logger
-- Fikk praktisk erfaring med sikkerhetsanalyse og hendelsesrespons
-
-### 🌐Hjemmelab i Packet Tracer
-
-- Designet et hjemmenettverk med private, gjeste- og DMZ-soner
-- Konfigurerte rutere og svitsjer med VLAN
-- Implementerte syslog-server for overvåkning
-
-### 💻PwC Cybersecurity Job Simulator
-
-- Gjennomførte en simulering innen cybersikkerhet
-- Utførte risikovurdering og utarbeidet sikkerhetsanbefalinger
-- Lærte å anvende integrerte forsvarsstrategier i realistiske scenarioer
-
-### 🕵️TryHackMe & OSINT med SpiderFoot
-
-- Løst praktiske CTF-oppgaver og lært om nettverksangrep i TryHackMe
-- Satt opp og brukt SpiderFoot for OSINT-analyse
-- Analysert skanningsresultater for å forstå sårbarheter
-
-## 📬Kontakt
-
-Jeg er alltid åpen for en prat om teknologi, prosjekter eller muligheter.
-
-📧 [Anhydang@outlook.com](mailto:Anhydang@outlook.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/an-hy-dang-9b693a311/)  
-🐙 [GitHub](https://github.com/LaZerNN1/Portfolio)
-
-© 2025 An Hy Dang · Bygget med HTML & TailwindCSS
+## 🛠️ Teknologi brukt
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+- [TailwindCSS](https://tailwindcss.com/) (via CDN)  
