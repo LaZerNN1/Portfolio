@@ -14,11 +14,11 @@ Dette prosjektet demonstrerer oppsett og konfigurasjon av et **hjemmenettverk me
 
 - **Maskinvare**
   - Ruter, Switch, Trådløst aksesspunkt
-  - Servere (Web, Syslog, DNS)
-  - Klienter (PC-er, mobil, IoT)
+  - Servere (Syslog)
+  - Klienter (PC-er)
 
 - **Tjenester**
-  - DHCP, DNS, Syslog, ACL / Port security
+  - DHCP, Syslog, ACL / Port security
 
 ---
 
@@ -33,7 +33,6 @@ Dette prosjektet demonstrerer oppsett og konfigurasjon av et **hjemmenettverk me
         <li>Definer VLAN: 10 (Privat), 20 (Gjest), 30 (DMZ), 40 (Admin)</li>
         <li>Inventar over nødvendige enheter (ruter, switch, servere, klienter)</li>
       </ul>
-      <p><em>Resultat:</em> klar plan og adresseoppsett før konfigurasjon.</p>
     </td>
     <td>
       <img src="https://gyazo.com/7f822f6e3cab1f919cdaa0667d0c286c.png" width="400">
@@ -96,10 +95,10 @@ Dette prosjektet demonstrerer oppsett og konfigurasjon av et **hjemmenettverk me
         <li>Konfigurer rutere og switch til å sende logs til Syslog</li>
         <li>Verifiser at DHCP fungerer og at klienter får riktige IP-er</li>
       </ul>
-      <p><em>Neste steg (ikke utført):</em> brannmur/ACL finjustering og DNS-setup.</p>
     </td>
     <td>
-      <img src="https://i.gyazo.com/placeholder-syslog.png" width="400" alt="Syslog server">
+      <img src="https://i.gyazo.com/2b928dd2988151f496197f39c5b3b57c.png" width="400">
+      <img src="https://i.gyazo.com/54a5f936cb21ed2b501bbbc31d22f847.png" width="400">
     </td>
   </tr>
 </table>
