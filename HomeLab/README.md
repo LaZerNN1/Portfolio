@@ -103,3 +103,21 @@ Dette prosjektet demonstrerer oppsett og konfigurasjon av et **hjemmenettverk me
   </tr>
 </table>
 
+---
+
+<table>
+  <tr>
+    <td width="60%">
+      <h3>Fase 5 — Testing og feilsøking</h3>
+      <ul>
+        <li>Bekreft at sikkerhetspolicyer fungerer som forventet</li>
+        <li>Bruk ping for å teste internkommunikasjon</li>
+      </ul>
+    </td>
+    <td>
+      <img src="https://gyazo.com/29b4653194e3bf55f4ecf344a3d294bd.png" width="400">
+      <img src="https://gyazo.com/5fb88337a201733a0070387aef782202.png" width="400">
+    </td>
+  </tr>
+</table>
+
