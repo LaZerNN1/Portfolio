@@ -141,7 +141,7 @@ DNS er kritisk for Active Directory — klienter bruker DNS for å lokalisere Do
 
 I **Active Directory Users and Computers** ble det høyreklikket på `lab.local → New` for å opprette nye objekter som Organizational Units, brukere og grupper.
 
-![ADUC New](images/10_1.png)
+![ADUC New](images/10.png)
 *Figur 10 – Opprette nye AD-objekter under lab.local*
 
 ---
@@ -155,7 +155,7 @@ Det ble opprettet to egendefinerte OU-er under `lab.local`:
 | `Brukere` | Brukerkontoer |
 | `Groups` | Sikkerhetsgrupper |
 
-![ADUC oversikt](images/10.png)
+![ADUC oversikt](images/5.1.png)
 *Figur 11 – Oversikt over lab.local med OU-ene Brukere og Groups*
 
 ---
@@ -169,7 +169,7 @@ To sikkerhetsgrupper ble opprettet i `Groups`-OU:
 | `HR` | Security Group |
 | `IT` | Security Group |
 
-![Grupper](images/10_2.png)
+![Grupper](images/10_1.png)
 *Figur 12 – Sikkerhetsgruppene HR og IT*
 
 ---
@@ -183,7 +183,7 @@ To brukere ble opprettet i `Brukere`-OU:
 | John Doe | User |
 | Alice Smith | User |
 
-![Brukere](images/11.png)
+![Brukere](images/10_2.png)
 *Figur 13 – John Doe og Alice Smith i Brukere-OU*
 
 ---
@@ -192,7 +192,7 @@ To brukere ble opprettet i `Brukere`-OU:
 
 **John Doe** ble lagt til som medlem i `HR`-gruppen.
 
-![HR gruppe](images/12.png)
+![HR gruppe](images/10_3.png)
 *Figur 14 – HR Properties: John Doe er medlem (lab.local/Brukere)*
 
 ---
@@ -203,7 +203,7 @@ To brukere ble opprettet i `Brukere`-OU:
 
 **Default Domain Policy** ble redigert via `Group Policy Management → lab.local → Default Domain Policy → Edit`. Policyen er koblet til `lab.local` og er aktivert.
 
-![GPO](images/10_3.png)
+![GPO](images/12.png)
 *Figur 15 – Group Policy Management: Redigere Default Domain Policy*
 
 ---
