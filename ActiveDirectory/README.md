@@ -256,7 +256,7 @@ For at klientmaskinen skal finne domenet må DNS peke på DC01 sin IP-adresse. D
 > **Foretrukket DNS-server** settes til IP-adressen til DC01 (f.eks. `192.168.x.x`).
 > IP-adressen hentes automatisk (DHCP), men DNS settes manuelt.
 
-![DNS innstillinger](images/1_1.png)
+![DNS innstillinger](images/1.1.png)
 *Figur 16 – TCP/IPv4: DNS peker på DC01 sin IP-adresse*
 
 ---
@@ -265,7 +265,7 @@ For at klientmaskinen skal finne domenet må DNS peke på DC01 sin IP-adresse. D
 
 For å koble maskinen til domenet kjøres kommandoen `sysdm.cpl` via kjør-dialogen (`Win + R`). Dette åpner Systemegenskaper direkte.
 
-![sysdm.cpl](images/1_2.png)
+![sysdm.cpl](images/1.2.png)
 *Figur 17 – Kjører sysdm.cpl for å åpne Systemegenskaper*
 
 ---
@@ -274,7 +274,7 @@ For å koble maskinen til domenet kjøres kommandoen `sysdm.cpl` via kjør-dialo
 
 I **Systemegenskaper** vises at maskinen heter `DESKTOP-6BA1NP4` og er i `WORKGROUP`. Her trykkes **Endre...** for å koble til domenet.
 
-![Systemegenskaper](images/1_3.png)
+![Systemegenskaper](images/1.3.png)
 *Figur 18 – Systemegenskaper viser maskinen i WORKGROUP*
 
 ---
@@ -289,7 +289,7 @@ I dialogboksen **Endringer i datamaskinnavn/-domene** velges **Domene** og `lab.
 | Medlem av | Domene |
 | Domenenavn | `lab.local` |
 
-![Domenetilkobling](images/1_4.png)
+![Domenetilkobling](images/1.4.png)
 *Figur 19 – Kobler jdoe til domenet lab.local*
 
 ---
@@ -303,7 +303,7 @@ Windows krever at en konto med tillatelse til å melde maskiner inn i domenet be
 | Brukernavn | `LAB\Administrator` |
 | Passord | *(domenets administratorpassord)* |
 
-![Windows Sikkerhet](images/1_5.png)
+![Windows Sikkerhet](images/1.5.png)
 *Figur 20 – Autentisering med LAB\Administrator for å bli med i domenet*
 
 > ✅ Etter vellykket autentisering bekrefter Windows at maskinen er lagt til i `lab.local`, og en omstart er nødvendig for at endringene skal tre i kraft.
