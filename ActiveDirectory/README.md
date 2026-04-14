@@ -239,6 +239,87 @@ Prosjektet demonstrerer et komplett Active Directory-miljø satt opp fra bunnen 
 - [x] Lagt John Doe til som medlem av HR-gruppen
 - [x] Konfigurert Group Policy med passordbegrensninger
 
+
+
+## Del 2
+
+### 2.1 Koble klient til domenet (jdoe)
+
+En ny VM med **Windows 10 Pro** ble opprettet og kalt `jdoe`. Denne maskinen ble koblet til domenet `lab.local` slik at brukeren John Doe kan logge inn med sin domenebruker.
+
+---
+
+### 2.2 Sette DNS til DC01
+
+For at klientmaskinen skal finne domenet må DNS peke på DC01 sin IP-adresse. Dette gjøres via `Nettverkstilkoblinger → Ethernet → Egenskaper → TCP/IPv4`.
+
+> **Foretrukket DNS-server** settes til IP-adressen til DC01 (f.eks. `192.168.x.x`).
+> IP-adressen hentes automatisk (DHCP), men DNS settes manuelt.
+
+![DNS innstillinger](images/1_1.png)
+*Figur 16 – TCP/IPv4: DNS peker på DC01 sin IP-adresse*
+
+---
+
+### 2.3 Åpne systemegenskaper med sysdm.cpl
+
+For å koble maskinen til domenet kjøres kommandoen `sysdm.cpl` via kjør-dialogen (`Win + R`). Dette åpner Systemegenskaper direkte.
+
+![sysdm.cpl](images/1_2.png)
+*Figur 17 – Kjører sysdm.cpl for å åpne Systemegenskaper*
+
+---
+
+### 7.3 Systemegenskaper – Datamaskinnavn
+
+I **Systemegenskaper** vises at maskinen heter `DESKTOP-6BA1NP4` og er i `WORKGROUP`. Her trykkes **Endre...** for å koble til domenet.
+
+![Systemegenskaper](images/1_3.png)
+*Figur 18 – Systemegenskaper viser maskinen i WORKGROUP*
+
+---
+
+### 7.4 Bli medlem av domenet
+
+I dialogboksen **Endringer i datamaskinnavn/-domene** velges **Domene** og `lab.local` skrives inn. Maskinen vil nå forsøke å kontakte DC01 og bli med i domenet.
+
+| Innstilling | Verdi |
+|---|---|
+| Datamaskinnavn | `DESKTOP-6BA1NP4` |
+| Medlem av | Domene |
+| Domenenavn | `lab.local` |
+
+![Domenetilkobling](images/1_4.png)
+*Figur 19 – Kobler jdoe til domenet lab.local*
+
+---
+
+### 7.5 Autentisering med domeneadmin
+
+Windows krever at en konto med tillatelse til å melde maskiner inn i domenet bekrefter operasjonen. Her brukes domenekontoen `LAB\Administrator`.
+
+| Felt | Verdi |
+|---|---|
+| Brukernavn | `LAB\Administrator` |
+| Passord | *(domenets administratorpassord)* |
+
+![Windows Sikkerhet](images/1_5.png)
+*Figur 20 – Autentisering med LAB\Administrator for å bli med i domenet*
+
+> ✅ Etter vellykket autentisering bekrefter Windows at maskinen er lagt til i `lab.local`, og en omstart er nødvendig for at endringene skal tre i kraft.
+
+---
+
+## 8. Oppsummering
+
+Prosjektet demonstrerer et komplett Active Directory-miljø satt opp fra bunnen av med VirtualBox, inkludert en klientmaskin koblet til domenet.
+
+### ✅ Fullførte steg
+- [x] Opprettet Windows 10 Pro klientmaskin (`jdoe`)
+- [x] Satt DNS på klient til DC01 sin IP-adresse
+- [x] Koblet klientmaskinen til domenet `lab.local` med `LAB\Administrator`
+
+
 ### 🗂️ Miljøoversikt
 
 ```
@@ -246,11 +327,14 @@ Forest: lab.local
 └── Domain Controller: DC01 (Windows Server 2022)
     ├── Roles: AD DS, DNS
     ├── OU: Brukere
-    │   ├── John Doe
+    │   ├── John Doe (jdoe)
     │   └── Alice Smith
     └── OU: Groups
         ├── HR  (members: John Doe)
         └── IT
+
+Klientmaskiner:
+└── jdoe (Windows 10 Pro) → medlem av lab.local
 ```
 
 ---
